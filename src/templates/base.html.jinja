@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}My Website{% endblock %}</title>
+    <link rel="stylesheet" href="rs/pico.min.css">
+</head>
+<body>
+    <header>
+        <h1>My Website</h1>
+    </header>
+
+    <main class="container">
+        {% block content %}
+        <p>Welcome to my website!</p>
+        {% endblock %}
+        {{ message }}
+    </main>
+
+    <script src="rs/htmx.min.js"></script>
+</body>
+</html>
